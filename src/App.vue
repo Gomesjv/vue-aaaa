@@ -31,7 +31,7 @@ onMounted (() =>{
 
 <style>
 button{
-  width: 30px;
+  width: 50px;
   height: 30px;
   border-radius: 20%;
   color: white;
