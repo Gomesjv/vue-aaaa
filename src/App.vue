@@ -16,6 +16,13 @@ function incrementar (){
 function reset (){
     contador.value = 0
    }
+   function maismil (){
+    contador.value = contador.value + 1000
+   }
+
+function milao (){
+  contador.value = contador.value + 1000000000000000000
+}
 
 onMounted (() =>{
   console.log(`${contador.value}`)
@@ -26,6 +33,8 @@ onMounted (() =>{
  <button @click = "incrementar">+</button>
   <button @click="decrementar">-</button>
 <button @click="reset">C</button>
+<button @click="maismil">1000</button>
+<button @click="milao">aaa</button>
   <p>valor do contador : {{ contador }}</p>
 </template>
 
@@ -37,5 +46,4 @@ button{
   color: white;
   background-color: black;
 }
-
 </style>
