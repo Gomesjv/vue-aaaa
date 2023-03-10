@@ -27,6 +27,8 @@ function milao (){
 onMounted (() =>{
   console.log(`${contador.value}`)
 })
+const mensagem = '<span style="color: red">Deve ser vermelho.</span>'
+const mensagemv = '<span style="color: green">Deve ser vermelho.</span>'
 </script>
 
 <template>
@@ -36,6 +38,8 @@ onMounted (() =>{
 <button @click="maismil">1000</button>
 <button @click="milao">aaa</button>
   <p>valor do contador : {{ contador }}</p>
+  <div v-if= "contador >= 10 " v-html="mensagem" ></div>
+  <div v-else v-html="mensagemv" ></div>
 </template>
 
 <style>
